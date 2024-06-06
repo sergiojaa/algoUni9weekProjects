@@ -29,7 +29,6 @@
 // > The password 'abc123xyz' is a strong password.
 // > The password '1337h@xor!' is a very strong password.
 // ```
-
 // * შექმენით passwordValidator ფუნქცია, რომელიც მიიღებს პაროლს არგუმენტად და დააბრუნებს მნიშვნელობას, რომელიც შეფასდება პაროლის სიძლიერის 
 // დასადგენად. ფუნქციამ არ უნდა დააბრუნოს სტრიქონის (string) ტიპის მნიშვნელობა.
 
@@ -137,6 +136,38 @@
 // > Change Owed: 0
 // ```
 
+// vqmnit arrays sadac validuri cifrebi ikneba.1,5,10,25. vqmnit cvlads vanichbt 50s. whileshi vwert sanam 50naklebia nulze,gamoakonsolos 
+// vali ra.50 rasac mivanichet.whileshive vkmnit momxmarebeli rasac sheikvans prompts.
+//mere ifshi vwert tu validuri shekvanili sheicavs im cifrsr rac momxmarebelmasheikvana,mashin 50s vaklebt momxmareblis shekvanils.
+// tyarada invalid coin.mere 50s vadarebt 0s ifshi,da vwert consolshi 50is cvlads imitoro kve gamoklebulia.aseve vareturnebt
+// vakonsolebt if is garet chagdeower 0. vidzaebt funqcias
+// function coinGame(){
+//     const  validCoins = [5,10,25]
+//     let debt = 50;
+//     while(debt > 0){
+//         console.log(`gadasaxadi: ${debt}`);
+//         const userMoney = Number(prompt('enter the amount of money'))
+//         if (validCoins.includes(userMoney)) {
+//             debt -= userMoney;
+//         } else {
+//             console.log('aravaliduri fuli');
+//         }
+//     }
+    
+//     if(debt <= 0){
+//         console.log(`davalianebis cvlileba ${debt}`)
+
+//     }else{
+//         console.log(`davalianebis cvlileba: 0`)
+//     }
+// }
+
+    
+
+
+// coinGame()
+
+
 // ### პროექტი 48 - Just setting up my twttr - ჩემი twttr-ის დაყენება
 // ტექსტური შეტყობინებების ან ე.წ. "ტვიტების" გაგზავნისას, არც ისე იშვიათია სიტყვების შემოკლება დროისა და შეტყობინების სიგრძის დაზოგვის მიზნით. 
 //ეს ხშირად ხმოვანთა გამოტოვების ხარჯზე ხდება, როგორც თავდაპირველად Twitter-ს ეძახდნენ twttr-ს. 
@@ -150,5 +181,10 @@
 // > Output: Twttr
 // > Input: What's your name?
 // > Output: Wht's yr nm?
+// let userString = prompt('enter the sentences')
+// let newUserString = userString.replace(/[aeiou]/gi, ''); // mdn-ze vnaxe es.
+// console.log(newUserString)
+
+
 
 
