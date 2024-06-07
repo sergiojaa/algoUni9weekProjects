@@ -73,7 +73,12 @@
 // * გამოიყენეთ ფუნქცია, სახელწოდებით countMonthsUntilPaidOff, რომელიც არგუმენტად იღებს ბალანსს, APR-ს და ყოველთვიურ 
 //გადასახადს და
 //  აბრუნებს თვეების რაოდენობას. ამ მნიშვნელობებს ფუნქციის გარედან არ მიწვდეთ.
-
+// let n = 0 //sheicvleba
+// let b = 1000
+// let r = 10
+// let pay = 100
+// let endDebt = 
+// console.log(`you will end in ${endDebt}`)
 
 
 // ### პროექტი 45 - Validating Inputs - Input-ების ვალიდაცია
