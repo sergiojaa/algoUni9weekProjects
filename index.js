@@ -37,14 +37,14 @@
 // ```
 // * შექმენით passwordValidator ფუნქცია, რომელიც მიიღებს პაროლს არგუმენტად და დააბრუნებს მნიშვნელობას, რომელიც შეფასდება პაროლის სიძლიერის 
 // დასადგენად. ფუნქციამ არ უნდა დააბრუნოს სტრიქონის (string) ტიპის მნიშვნელობა.
-let password = prompt('enter the password')
-if(!isNaN(password) && password.length < 8){
-    console.log('dzalian susti parolia')
-}else if(typeof password === 'string' && password.length < 8){
-    console.log('susti parolia')
-}else if(typeof password === 'string' && typeof password === 'number'){
-    console.log('dzlieri paroli')
-}
+// let password = prompt('enter the password')
+// if(!isNaN(password) && password.length < 8){
+//     console.log('dzalian susti parolia')
+// }else if(typeof password === 'string' && password.length < 8){
+//     console.log('susti parolia')
+// }else if(typeof password === 'string' && typeof password === 'number'){
+//     console.log('dzlieri paroli')
+// }
 
 // ### პროექტი 44 - Months to Pay Off a Credit Card - საკრედიტო ბარათის დაფარვისთვის საჭირო თვეები
 // საკრედიტო ბარათის ბალანსის დაფარვას შეიძლება გაცილებით მეტი დრო დასჭირდეს, ვიდრე მის მფლობელს წარმოუდგენია.
@@ -77,10 +77,12 @@ if(!isNaN(password) && password.length < 8){
 
 
 // ### პროექტი 45 - Validating Inputs - Input-ების ვალიდაცია
-// ხშირად პროგრამის ლოგიკის დაშლა პატარა ფუნქციებად გვიწევს, რომლებიც თითოეულ დავალებას ასრულებენ. შემდეგ ეს ფუნქციები 
+// ხშირად პროგრამის ლოგიკის დაშლა პატარა ფუნქციებად გვიწევს, რომლებიც თითოეულ დავალებას ასრულებენ.
+// შემდეგ ეს ფუნქციები 
 // თანმიმდევრობით, მთლიანი პროგრამის ასამუშავებლად გამოძახება.
 
-// დაწერეთ პროგრამა, რომელიც მოგთხოვთ სახელს, გვარს, თანამშრომლის ID-ს და ZIP კოდს. დარწმუნდით, რომ input-ები ვალიდურია 
+// დაწერეთ პროგრამა, რომელიც მოგთხოვთ სახელს, გვარს, თანამშრომლის ID-ს და ZIP კოდს. დარწმუნდით, 
+//რომ input-ები ვალიდურია 
 // შემდეგი წესების მიხედვით:
 
 // • სახელი უნდა იყოს შევსებული.
@@ -109,6 +111,28 @@ if(!isNaN(password) && password.length < 8){
 // ```
 // * შექმენით ფუნქცია თითოეული ტიპის ვალიდაციისთვის. შემდეგ შექმენით validateInput ფუნქცია, რომელიც იღებს ყველა Input-ის მონაცემს და
 //  იძახებს კონკრეტული ვალიდაციის ფუნქციებს.
+// function validation(){
+//     let name = prompt('enter the name')
+//     const lastName = prompt('enter the lastName')
+//     const ID = prompt('enter the ID')
+//     const zip = prompt('enter the zip')
+//     if(typeof name === 'string'  && name.length < 2){
+//         console.log('unda sheicavdes name minimum 2 asos')
+//     }
+//      if(typeof lastName === 'string'  && lastName.length < 2){
+//         console.log('unda sheicavdes lasnname minimum 2 asos')
+//     }
+//      if(ID.length > 7 && ID.includes(Number) && ID.includes(String)){
+//         console.log('mesame mushaobs')
+//     }
+//      if(typeof zip === Number){
+//         console.log('zipsheicavs numberebs')
+//     }else{
+//         console.log('kodi idealurad mushaobs bravo sergi')
+//     }
+// }
+// validation()
+
 
 // ### პროექტი 46 - Camel Case
 // თუ ცვლადი არაერთ სიტყვას შეიცავს, ზოგიერთ ენაში ხშირია ცვლადების სახელებისთვის camel case-ის გამოყენება, - პირველი
