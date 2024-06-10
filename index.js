@@ -13,12 +13,7 @@
 // * გამოიყენეთ ფუნქცია, სახელად isAnagram, რომელიც არგუმენტად იღებს ორ სტრიქონს და აბრუნებს boolean-ს. 
 //გამოიძახეთ ეს ფუნქცია თქვენი მთავარი ფუნქციიდან.
 // * შეამოწმეთ, ორივე სიტყვა ერთნაირი სიგრძისაა თუ არა.
-// function isAnagram(str1, str2){
-//     if(str1.length === str2.length ){
 
-//     }
-// }
-// isAnagram(anano, onana)
 
 // ### პროექტი 43 - Password Strength Indicator - პაროლის სიძლიერის შემფასებელი
 // ექმენით პროგრამა, რომელიც განსაზღვრავს მოცემული პაროლის სიძლიერეს ამ წესების საფუძველზე:
@@ -42,8 +37,6 @@
 //     console.log('dzalian susti parolia')
 // }else if(typeof password === 'string' && password.length < 8){
 //     console.log('susti parolia')
-// }else if(typeof password === 'string' && typeof password === 'number'){
-//     console.log('dzlieri paroli')
 // }
 
 // ### პროექტი 44 - Months to Pay Off a Credit Card - საკრედიტო ბარათის დაფარვისთვის საჭირო თვეები
@@ -56,7 +49,7 @@
 
 // ![Image](/images/week3-formula.png)
 
-// • n არის თვეების რაოდენობა. 13 n*p tu metia bze.b + r%. / p.
+// • n არის თვეების რაოდენობა. 
 // • i არის დღიური მაჩვენებელი (APR / 365).
 // • b - ბალანსი.
 // • p - ყოველთვიური გადასახდელი თანხა.
@@ -73,12 +66,6 @@
 // * გამოიყენეთ ფუნქცია, სახელწოდებით countMonthsUntilPaidOff, რომელიც არგუმენტად იღებს ბალანსს, APR-ს და ყოველთვიურ 
 //გადასახადს და
 //  აბრუნებს თვეების რაოდენობას. ამ მნიშვნელობებს ფუნქციის გარედან არ მიწვდეთ.
-// let n = 0 //sheicvleba
-// let b = 1000
-// let r = 10
-// let pay = 100
-// let endDebt = 
-// console.log(`you will end in ${endDebt}`)
 
 
 // ### პროექტი 45 - Validating Inputs - Input-ების ვალიდაცია
@@ -132,9 +119,8 @@
 //     }
 //      if(typeof zip === Number){
 //         console.log('zipsheicavs numberebs')
-//     }else{
-//         console.log('kodi idealurad mushaobs bravo sergi')
 //     }
+//     return 'kodi idealurad mushaobs bravo sergi'
 // }
 // validation()
 
@@ -156,11 +142,21 @@
 // ```shell
 // > camelCase: name
 // > snake_case: name
-// > camelCase: firstMame
+// > camelCase: firstName
 // > snake_case: first_name
 // > camelCase: preferredFirstName
 // > snake_case: preferred_first_name
-// const userCamelCase = prompt('enter the word')
+// let camelCase = 'firstName';
+// let snakeCase = ''
+// for(let i = 0;i< camelCase.length;i++){
+//     if(camelCase[i].charCodeAt(0) >= 65 && camelCase[i].charCodeAt(0) <= 90){
+//         snakeCase += '_' + camelCase[i].toLocaleLowerCase()
+//     }else{
+//         snakeCase += camelCase[i]
+//     }
+// }
+
+// console.log(snakeCase); 
 
 
 // ### პროექტი 47 - Coke Machine - კოკა-კოლის მანქანა
