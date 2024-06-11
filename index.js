@@ -13,15 +13,32 @@
 // * გამოიყენეთ ფუნქცია, სახელად isAnagram, რომელიც არგუმენტად იღებს ორ სტრიქონს და აბრუნებს boolean-ს. 
 //გამოიძახეთ ეს ფუნქცია თქვენი მთავარი ფუნქციიდან.
 // * შეამოწმეთ, ორივე სიტყვა ერთნაირი სიგრძისაა თუ არა.
+// function isAnagram(str1,str2){
+//     // gadagvkavs lowercaseshi
+//     str1 = str1.toLowerCase();
+//     str2 = str2.toLowerCase();
+//     // gavxlicet titoeuli sitkva
+//     let arr1 = str1.split('');
+//     let arr2 = str2.split('');
+//     //davsortet array sitkva
+   
+//     arr1.sort();
+//     arr2.sort();
+   
+//    //shevadarot arr1.arr2-s
+//     return arr1=== arr2
+    
+// }
+// console.log(isAnagram('hello', 'sergi')); 
 
 
 // ### პროექტი 43 - Password Strength Indicator - პაროლის სიძლიერის შემფასებელი
 // ექმენით პროგრამა, რომელიც განსაზღვრავს მოცემული პაროლის სიძლიერეს ამ წესების საფუძველზე:
 
-// • ძალიან სუსტი პაროლი შეიცავს მხოლოდ ციფრებს და რვა სიმბოლოზე ნაკლებია.
-// • სუსტი პაროლი შეიცავს მხოლოდ ასოებს და რვა სიმბოლოზე ნაკლებია.
-// • ძლიერი პაროლი შეიცავს ასოებს და მინიმუმ ერთ რიცხვს, ასევე, მინიმუმ რვა სიმბოლოს.
-// • ძალიან ძლიერი პაროლი შეიცავს ასოებს, ციფრებს და სპეციალურ სიმბოლოებს და არის მინიმუმ რვა სიმბოლოს სიგრძის.
+    // • ძალიან სუსტი პაროლი შეიცავს მხოლოდ ციფრებს და რვა სიმბოლოზე ნაკლებია.
+    // • სუსტი პაროლი შეიცავს მხოლოდ ასოებს და რვა სიმბოლოზე ნაკლებია.
+    // • ძლიერი პაროლი შეიცავს ასოებს და მინიმუმ ერთ რიცხვს, ასევე, მინიმუმ რვა სიმბოლოს.
+    // • ძალიან ძლიერი პაროლი შეიცავს ასოებს, ციფრებს და სპეციალურ სიმბოლოებს და არის მინიმუმ რვა სიმბოლოს სიგრძის.
 
 // Example Output
 // ```shell
@@ -32,12 +49,40 @@
 // ```
 // * შექმენით passwordValidator ფუნქცია, რომელიც მიიღებს პაროლს არგუმენტად და დააბრუნებს მნიშვნელობას, რომელიც შეფასდება პაროლის სიძლიერის 
 // დასადგენად. ფუნქციამ არ უნდა დააბრუნოს სტრიქონის (string) ტიპის მნიშვნელობა.
-// let password = prompt('enter the password')
-// if(!isNaN(password) && password.length < 8){
-//     console.log('dzalian susti parolia')
-// }else if(typeof password === 'string' && password.length < 8){
-//     console.log('susti parolia')
+
+// function passwordValidator() {
+//     let userPassword = prompt('Enter your password:');
+
+//     const isNumeric = /^\d+$/.test(userPassword);
+//     const isAlphabetic = /^[a-zA-Z]+$/.test(userPassword);
+//     const hasLetter = /[a-zA-Z]/.test(userPassword);
+//     const hasNumber = /\d/.test(userPassword);
+//     const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(userPassword);
+    
+//     if (isNumeric && userPassword.length < 8) {
+//         return `The password '${userPassword}' is a very weak password.`;
+//     }
+
+    
+//     if (isAlphabetic && userPassword.length < 8) {
+//         return `The password '${userPassword}' is a weak password.`;
+//     }
+
+    
+//     if (hasLetter && hasNumber && userPassword.length >= 8) {
+//         if (hasSpecialChar) {
+//             return `The password '${userPassword}' is a very strong password.`;
+//         }
+//         return `The password '${userPassword}' is a strong password.`;
+//     }
+
+    
+//     return `The password '${userPassword}' does not meet the strength requirements.`;
 // }
+
+// console.log(passwordValidator());
+
+
 
 // ### პროექტი 44 - Months to Pay Off a Credit Card - საკრედიტო ბარათის დაფარვისთვის საჭირო თვეები
 // საკრედიტო ბარათის ბალანსის დაფარვას შეიძლება გაცილებით მეტი დრო დასჭირდეს, ვიდრე მის მფლობელს წარმოუდგენია.
@@ -66,7 +111,7 @@
 // * გამოიყენეთ ფუნქცია, სახელწოდებით countMonthsUntilPaidOff, რომელიც არგუმენტად იღებს ბალანსს, APR-ს და ყოველთვიურ 
 //გადასახადს და
 //  აბრუნებს თვეების რაოდენობას. ამ მნიშვნელობებს ფუნქციის გარედან არ მიწვდეთ.
-
+// ikos es proekti damekarga is formula.ideashi arunda ikosrtuli formulit ricxvbs ro chavsvamdit.
 
 // ### პროექტი 45 - Validating Inputs - Input-ების ვალიდაცია
 // ხშირად პროგრამის ლოგიკის დაშლა პატარა ფუნქციებად გვიწევს, რომლებიც თითოეულ დავალებას ასრულებენ.
